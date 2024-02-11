@@ -15,6 +15,12 @@ const experience = [
       "Being the team leader for Mobile Application Development competition in Telkom University",
     imageName: "motionhack",
   },
+  {
+    name:"FIND IT! 2023",
+    description:
+      "Being the team leader for UX Design competition in FIND IT! 2023 UX Competition",
+    imageName: "findit",
+  },
 
 ];
 const AchievementCertificateCarousel = () => {
