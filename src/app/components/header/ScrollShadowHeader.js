@@ -28,9 +28,7 @@ const ScrollShadowHeader = () => {
         </div>
         <div className="flex items-center space-x-4">
           <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">About</a>
-          <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Experiences</a>
-          <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Achievements</a>
-          <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Volunteer</a>
+          <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Showcases</a>
           <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Contact</a>
         </div>
       </nav>

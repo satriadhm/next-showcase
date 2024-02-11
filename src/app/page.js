@@ -2,6 +2,7 @@ import Image from "next/image";
 import ScrollShadowHeader from "./components/header/ScrollShadowHeader";
 import ExperienceCertificateCarousel from "./components/ExperienceCardCarousel";
 import AchievementCardCarousel from "./components/AchievementCardCarousel";
+import VolunteerCertificateCarousel from "./components/VolunteerCardCarousel";
 
 export default function Home() {
   return (
@@ -41,9 +42,11 @@ export default function Home() {
                 </button>
               </div>
               <div>
-                <button className="px-8 lg:px-8 py-4 text-lg font-bold text-[#6F452C] bg-white border border-[#6F452C] rounded hover:border-[#D99C7A]">
-                  Contact Me
-                </button>
+                <a href="https://wa.me/6282241389340" target="_blank">
+                  <button className="px-8 lg:px-8 py-4 text-lg font-bold text-[#6F452C] bg-white border border-[#6F452C] rounded hover:border-[#D99C7A]">
+                    Contact Me
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -53,33 +56,28 @@ export default function Home() {
             <span className="font-bold text-[#D99C7A]">Show</span>{" "}
             <span className="font-bold text-[#6F452C]">cases</span>
           </div>
-
           <div className="flex flex-col">
             <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
               Experience
             </h2>
-            <div className="flex overflow-x-auto flex-nowrap">
-              <div className="w-full mx-auto max-w-[800px]">
-                <ExperienceCertificateCarousel />
-              </div>
+            <div className="flex flex-nowrap">
+              <ExperienceCertificateCarousel />
             </div>
           </div>
           <div className="flex flex-col">
             <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
               Achievements
             </h2>
-            <div className="flex overflow-x-auto flex-nowrap">
-              <div className="w-full mx-auto max-w-[800px]">  
-                <AchievementCardCarousel />
-              </div>
+            <div className="flex flex-nowrap">
+              <AchievementCardCarousel />
             </div>
           </div>
           <div className="flex flex-col">
             <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
               Volunteer
             </h2>
-            <div className="flex overflow-x-auto flex-nowrap">
-              {/* Volunteer cards go here */}
+            <div className="flex flex-nowrap">
+              <VolunteerCertificateCarousel />
             </div>
           </div>
         </div>

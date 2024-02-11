@@ -23,7 +23,7 @@ const AchievementCertificateCarousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % certificates.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, [certificates.length]);

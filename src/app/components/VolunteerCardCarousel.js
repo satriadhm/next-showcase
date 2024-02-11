@@ -4,23 +4,24 @@ import CardCertificate from "./CardCertificate";
 
 const experience = [
   {
-    name: "FPT Software Ltd",
+    name: "TVRI 1000 Tree Planting",
     description:
-      "Built the server for ‘MyFPT’ mobile application. Improved the security and maintainability",
-    imageName: "fpt",
+      "Being selected to contribute for the 1000 tree planting event by TVRI, the national television of Indonesia.",
+    imageName: "tvri",
   },
   {
-    name: "Kamar Pelajar",
+    name: "AIESEC Leadership Development Program",
     description:
-      "Building KamarPelajar.id, website for international students accommodation across the globe.",
-    imageName: "kamarpelajar",
+      "Participated in AIESEC Leadership program during internship in Vietnam..",
+    imageName: "aiesec",
   },
   {
-    name: "Dinotis.com indonesia",
+    name: "Community Service PT. Angkasa",
     description:
-      "Ensuring the product, process, and project quality from Dinotis.com Indonesia.",
-    imageName: "dinotis",
+      "Being selected to contribute for the community service at PT Angkasa.",
+    imageName: "angkasa",
   },
+
 ];
 const VolunteerCertificateCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,7 +29,7 @@ const VolunteerCertificateCarousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % certificates.length);
-    }, 5000); 
+    }, 3000); 
 
     return () => clearInterval(intervalId);
   }, [certificates.length]);
