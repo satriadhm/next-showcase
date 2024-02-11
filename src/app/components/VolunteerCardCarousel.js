@@ -21,6 +21,17 @@ const experience = [
       "Being selected to contribute for the community service at PT Angkasa.",
     imageName: "angkasa",
   },
+  {
+    name: "Community Service LMS Online Learning",
+    description:
+      "Being selected to contribute for the community service at LMS Online Learning.",
+    imageName: "savoy",
+  },
+  {
+    name : "Gerakan Sekolah Menulis Buku",
+    description:"Wrote a nationalism poem for the Sekolah Menulis Buku movement.",
+    imageName:"menulis"
+  }
 
 ];
 const VolunteerCertificateCarousel = () => {
