@@ -1,50 +1,15 @@
 import Image from "next/image";
+import ScrollShadowHeader from "./components/header/ScrollShadowHeader";
+import ExperienceCertificateCarousel from "./components/ExperienceCardCarousel";
+import AchievementCardCarousel from "./components/AchievementCardCarousel";
 
 export default function Home() {
   return (
     <>
-      <header className="sticky top-0 z-10 ">
-        <nav className="flex items-center justify-between p-8">
-          <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold">Glorious Satria</h1>
-          </div>
-          <div className="flex items-center space-x-4">
-            <a
-              href="#"
-              className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold"
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold"
-            >
-              Experiences
-            </a>
-            <a
-              href="#"
-              className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold"
-            >
-              Achievements
-            </a>
-            <a
-              href="#"
-              className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold"
-            >
-              Volunteer
-            </a>
-            <a
-              href="#"
-              className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold"
-            >
-              Contact
-            </a>
-          </div>
-        </nav>
-      </header>
+      <ScrollShadowHeader />
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="flex justify-between">
-          <div className="flex justify-left ">
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className="flex justify-center lg:justify-start mb-8 lg:mb-0">
             <Image
               src="/Glorious1.svg"
               alt="Glorious Satria"
@@ -52,13 +17,13 @@ export default function Home() {
               height={400}
             />
           </div>
-          <div className="flex-justify-end ml-40">
-            <div className="text-6xl mb-16">
+          <div className="flex flex-col justify-center lg:ml-40">
+            <div className="text-4xl lg:text-6xl mb-8 lg:mb-16">
               <span className="font-semibold">Hi! My name is</span> <br />
               <span className="font-bold text-[#D99C7A]">Glorious</span>{" "}
               <span className="font-bold text-[#6F452C]">Satria</span>
             </div>
-            <div className="text-2xl mt-4">
+            <div className="text-lg lg:text-2xl mb-8">
               <p className="mb-4">Undergraduate Software Engineering student</p>
               <p className="mb-4">
                 <span className="text-[#6F452C] font-bold">1+</span> year of
@@ -69,15 +34,52 @@ export default function Home() {
                 experience in software quality assurance
               </p>
             </div>
-            <div className="flex justify-between mt-20 ">
-              <div className="space-x-10">
-                <button className="px-8 py-4 text-lg font-bold text-white bg-[#6F452C] rounded hover:bg-[#D99C7A]">
+            <div className="flex flex-col lg:flex-row justify-center lg:justify-between">
+              <div className="mb-4 lg:mb-0">
+                <button className="px-8 lg:px-8 py-4 text-lg font-bold text-white bg-[#6F452C] rounded hover:bg-[#D99C7A]">
                   See More
                 </button>
-                <button className="px-8 py-4 text-lg font-bold text-[#6F452C] bg-white border border-[#6F452C] rounded hover: hover:border-[#D99C7A]">
+              </div>
+              <div>
+                <button className="px-8 lg:px-8 py-4 text-lg font-bold text-[#6F452C] bg-white border border-[#6F452C] rounded hover:border-[#D99C7A]">
                   Contact Me
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="text-6xl mb-16 mt-20 text-center">
+            <span className="font-bold text-[#D99C7A]">Show</span>{" "}
+            <span className="font-bold text-[#6F452C]">cases</span>
+          </div>
+
+          <div className="flex flex-col">
+            <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
+              Experience
+            </h2>
+            <div className="flex overflow-x-auto flex-nowrap">
+              <div className="w-full mx-auto max-w-[800px]">
+                <ExperienceCertificateCarousel />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
+              Achievements
+            </h2>
+            <div className="flex overflow-x-auto flex-nowrap">
+              <div className="w-full mx-auto max-w-[800px]">  
+                <AchievementCardCarousel />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
+              Volunteer
+            </h2>
+            <div className="flex overflow-x-auto flex-nowrap">
+              {/* Volunteer cards go here */}
             </div>
           </div>
         </div>
