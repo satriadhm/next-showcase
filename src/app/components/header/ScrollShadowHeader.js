@@ -24,11 +24,11 @@ const ScrollShadowHeader = () => {
     <header className={`sticky top-0 z-10 ${hasScrolled ? 'shadow-lg bg-gray-100' : ''}`}>
       <nav className="flex items-center justify-between p-8">
         <div className="flex items-center space-x-4">
-          <h1 className="text-2xl font-bold">Glorious Satria</h1>
+            <a href="/" className="text-2xl font-bold hover:text-[#6F452C] hover:font-bold">Glorious Satria</a>
         </div>
         <div className="flex items-center space-x-4">
-          <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">About</a>
-          <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Showcases</a>
+          <a href="/about" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">About</a>
+        <a href="#showcase" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Showcases</a>
           <a href="#" className="text-lg transition-colors hover:text-[#6F452C] hover:font-bold">Contact</a>
         </div>
       </nav>

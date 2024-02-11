@@ -3,13 +3,14 @@ import ScrollShadowHeader from "./components/header/ScrollShadowHeader";
 import ExperienceCertificateCarousel from "./components/ExperienceCardCarousel";
 import AchievementCardCarousel from "./components/AchievementCardCarousel";
 import VolunteerCertificateCarousel from "./components/VolunteerCardCarousel";
+import FooterContactCopyright from "./components/footer/FooterContactCopyright";  
 
 export default function Home() {
   return (
     <>
       <ScrollShadowHeader />
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex flex-col lg:flex-row justify-between mb-20">
           <div className="flex justify-center lg:justify-start mb-8 lg:mb-0">
             <Image
               src="/Glorious1.svg"
@@ -37,13 +38,13 @@ export default function Home() {
             </div>
             <div className="flex flex-col lg:flex-row justify-center lg:justify-between">
               <div className="mb-4 lg:mb-0">
-                <button className="px-8 lg:px-8 py-4 text-lg font-bold text-white bg-[#6F452C] rounded hover:bg-[#D99C7A]">
+                <button className="px-16 lg:px-16 py-4 text-lg font-bold text-white bg-[#6F452C] rounded hover:bg-[#D99C7A]">
                   See More
                 </button>
               </div>
               <div>
                 <a href="https://wa.me/6282241389340" target="_blank">
-                  <button className="px-8 lg:px-8 py-4 text-lg font-bold text-[#6F452C] bg-white border border-[#6F452C] rounded hover:border-[#D99C7A]">
+                  <button className="px-16 lg:px-16 py-4 text-lg font-bold text-[#6F452C] bg-white border border-[#6F452C] rounded hover:border-[#D99C7A]">
                     Contact Me
                   </button>
                 </a>
@@ -51,21 +52,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center">
-          <div className="text-6xl mb-16 mt-20 text-center">
+        <div className="flex flex-col items-center ">
+          <div id="showcase" className="text-6xl mb-16 mt-20 text-center">
             <span className="font-bold text-[#D99C7A]">Show</span>{" "}
             <span className="font-bold text-[#6F452C]">cases</span>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
+            <h2 className="text-4xl mt-10 mb-20 font-bold text-center text-[#6F452C]">
               Experience
             </h2>
-            <div className="flex flex-nowrap">
+            <div className="flex flex-nowrap ">
               <ExperienceCertificateCarousel />
             </div>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
+            <h2 className="text-4xl mt-10 mb-20 font-bold text-center text-[#6F452C]">
               Achievements
             </h2>
             <div className="flex flex-nowrap">
@@ -73,7 +74,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col">
-            <h2 className="text-4xl mt-20 mb-20 font-bold text-center text-[#6F452C]">
+            <h2 className="text-4xl mt-10 mb-20 font-bold text-center text-[#6F452C]">
               Volunteer
             </h2>
             <div className="flex flex-nowrap">
@@ -81,6 +82,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <FooterContactCopyright />
       </main>
     </>
   );

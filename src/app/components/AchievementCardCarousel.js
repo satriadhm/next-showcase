@@ -12,7 +12,7 @@ const experience = [
   {
     name: "Motionhack 2.0",
     description:
-      "Being the team leader for Blockchain competition and adress solution for Land Sector in Indonesia",
+      "Being the team leader for Mobile Application Development competition in Telkom University",
     imageName: "motionhack",
   },
 
